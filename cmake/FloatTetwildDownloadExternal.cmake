@@ -75,26 +75,26 @@ endfunction()
 ## fmt
 function(float_tetwild_download_fmt)
     float_tetwild_download_project(fmt
-        URL      https://github.com/fmtlib/fmt/archive/5.3.0.tar.gz
-        URL_MD5  1015bf3ff2a140dfe03de50ee2469401
+        GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+        GIT_TAG        10.1.0
     )
 endfunction()
 
 ## spdlog
 function(float_tetwild_download_spdlog)
     float_tetwild_download_project(spdlog
-        URL         https://github.com/gabime/spdlog/archive/v1.3.1.tar.gz
-        URL_MD5     3c17dd6983de2a66eca8b5a0b213d29f
+       GIT_REPOSITORY https://github.com/gabime/spdlog.git
+       GIT_TAG        v1.12.0
     )
 endfunction()
 
 ## Geogram LGPL
 function(float_tetwild_download_geogram)
     float_tetwild_download_project(geogram
-#        GIT_REPOSITORY   https://github.com/polyfem/geogram.git
-#        GIT_TAG          e6b9612f1146370e40deaa341b4dd7ef90502102
-            GIT_REPOSITORY https://github.com/Yixin-Hu/geogram
-            GIT_TAG        b613750341a6cdd31ae8df80ecfc26ac7ca1a6ad
+       GIT_REPOSITORY   https://github.com/polyfem/geogram.git
+       GIT_TAG          3191ff581d4087ebddff735a21bf3ca2415f53be
+            # GIT_REPOSITORY https://github.com/Yixin-Hu/geogram
+            # GIT_TAG        b613750341a6cdd31ae8df80ecfc26ac7ca1a6ad
     )
 endfunction()
 
